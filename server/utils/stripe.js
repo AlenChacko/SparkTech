@@ -20,8 +20,8 @@ const stripeUtil = app => {
           },
           quantity: item.qty,
         })),
-        success_url: `${process.env.CLIENT_URL}/success-screen`,
-        cancel_url: `${process.env.CLIENT_URL}/place-order`,
+        success_url: `${process.env.example.CLIENT_URL}/success-screen`,
+        cancel_url: `${process.env.example.CLIENT_URL}/place-order`,
       })
       res.json({ url: session.url })
     } catch (error) {
