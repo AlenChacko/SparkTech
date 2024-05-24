@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 
-//https://stackoverflow.com/questions/57009371/access-to-xmlhttprequest-at-from-origin-localhost3000-has-been-blocked
+
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "http://localhost:3000");
